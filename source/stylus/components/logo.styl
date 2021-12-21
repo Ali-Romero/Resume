@@ -1,0 +1,26 @@
+.logo
+  width: 47px
+  height: 47px
+  border-radius: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: $color-blue
+  transition: .5s ease-in-out
+  fill: #222222
+
+  +above($breakpoints.md)
+    width: 55px
+    height: 55px
+
+  &:hover
+    background-color: $color-blue-light
+
+.logo-img
+  display: block
+  width: 40px
+  height: 40px
+
+  +above($breakpoints.md)
+    width: 47px
+    height: 43px

@@ -1,0 +1,23 @@
+section.skills.section(id="skills")
+  .wrapper
+    .skills__container
+      .skills__info
+        .skills__title
+          .subtitle
+            .subtitle__icon
+              +icon(name="skills").svg.svg--static
+            h3.subtitle__text Навыки
+        .skills__description
+          .text-description
+            | Хорошие знания: HTML, CSS, SASS, Stylus, PUG, Git, БЭМ.
+            | Опыт работы c Figma, Adobe Photoshop, Npm.
+            | Опыт кроссбраузерной, адаптивной, валидной вёрстки.
+            | Начальные знания Javascript.
+            | Есть опыт использования jQuery, jQuery-плагинов.
+            | Создал собственный фреймворк для вёрстки, основанный на Gulp. Вот ссылка на него:
+            .text-description__box-link
+              +icon(name="arrow-link").svg.svg--hover-none.mr-20
+              a(href="https://github.com/Ali-Romero/meccano" rel="noopener" target="_blank").text-description__link Ссылка на GH
+                +icon(name="github").svg
+        .skills__progress
+          include ../components/Progress

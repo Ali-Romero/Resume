@@ -1,0 +1,43 @@
+.modal-fullscreen.remodal-wrapper
+  padding: 0
+  overflow: hidden
+
+.modal-fullscreen.remodal
+  overflow: hidden
+  padding: 0
+  margin: 0
+  max-width: 100%
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: RGBA(155,155,167,0.44)
+
+.img-modal
+  width: 100%
+
+.icon-modal
+  width: 40px
+  height: 40px
+  fill: $color-red
+  position: absolute
+  top: 20px
+  right: 30px
+  animation: img 1.3s infinite ease-in-out
+
+vendord = official
+   @keyframes img {
+      0%{
+        opacity: 1
+      }
+
+      50%{
+        opacity: 0.4
+      }
+
+
+      100%{
+        opacity: 1
+      }
+  }

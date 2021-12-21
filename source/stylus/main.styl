@@ -1,0 +1,26 @@
+@import 'common/variables'
+@import 'common/*'
+@import 'components/*'
+
+@font-face
+  font-family: "Serif-bold"
+  src: url('../fonts/Serif.woff'), url('../fonts/Serif.woff2')
+  font-display: swap
+
+@font-face
+  font-family: "Futura"
+  src: url('../fonts/futurabookc.woff'), url('../fonts/futurabookc.woff2')
+  font-display: swap
+
+.page
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  background-color: $color-black
+
+  &__header
+    position: sticky
+    top: 0
+
+  &__content
+    flex: 1

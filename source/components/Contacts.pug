@@ -1,0 +1,24 @@
+section.contacts.section(id="contacts")
+  .wrapper
+    .contacts__container
+      .contacts__info
+        .contacts__title
+          .subtitle
+            .subtitle__icon
+              +icon(name="contacts").svg.svg--static
+            h3.subtitle__text  Контакты
+        .contacts__connection
+          .connection
+            ul.connection__list
+              li.connection__item
+                a.connection__link(href="mailto:sherali920825@yandex.ru" target="_blank")
+                  .contacts__email Email: sherali920825@yandex.ru
+              li.connection__item
+                a.connection__link(href="https://wa.me/996705470447" rel="noopener" target="_blank")
+                  .contacts__whatsapp WatsApp: +996705470447
+                    .contacts__whatsapp-icon
+              li.connection__item
+                a.connection__link(href="https://t.me/romero0107" rel="noopener" target="_blank")
+                  .contacts__telegram Telegram: @romero0107
+          .contacts__form
+            include ../components/Form

@@ -1,0 +1,17 @@
+form(id="my-form" name="my-form" role='form' action="https://formsubmit.co/formresume2021@gmail.com" method="POST").form
+  input(type="hidden" name="_captcha" value="false")
+  .form__title Обратная связь
+  .form__input-wrapper
+    .form__input-box
+      input(name="Name" required id="name" type="text" placeholder="").form-input
+      label(for="name").form__input-description Имя
+    .form__input-box
+      input(name="Email" required id="email" type="email" placeholder="").form-input
+      label(for="email").form__input-description Email
+    .form__input-box.form__input-box--last-child
+      textarea(name="Message" id="message" type="text" placeholder="").form-input.form-input--text
+      label(for="message").form__input-description Сообщение
+    .form__btn
+      button(type="submit").btn Отправить
+    .form__status
+      #status

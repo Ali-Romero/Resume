@@ -1,0 +1,40 @@
+.right-side
+  +above($breakpoints.xl)
+    width: 74%
+    position: relative
+    float: right
+
+  &__inner
+    padding: 0 10px
+
+    +above($breakpoints.sm)
+      padding: 0 20px
+
+    +above($breakpoints.md)
+      padding: 0 30px
+
+  &__header
+    position: sticky
+    top: -1px
+    z-index: 3
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 7px
+    background-color: $color-dark
+    margin-bottom: 15px
+    box-shadow: 3px 26px 42px 0px rgba(0, 0, 0, 0.47)
+
+    +above($breakpoints.md)
+      margin-bottom: 30px
+      justify-content: center
+      padding: 23px
+
+    +above($breakpoints.lg)
+      padding: 40px 30px
+
+  &__header-logo
+    display: block
+
+    +above($breakpoints.md)
+      display: none
